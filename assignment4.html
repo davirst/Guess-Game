@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Guessing Game</title>
+	<link rel="stylesheet" type="text/css" href="assignment4.css">
+</head>
+<body>
+	
+	<script src="assignment4.js"></script>
+
+	<div class = "split left">
+	<br><br>
+
+	<center>
+	<h1> Guess the availble car? </h1>
+	<p> [Place Instructions here] </p>
+	<div id="result"> </div>
+	</center>
+
+	<div id = "third"> <button onload="checkCookie()" onclick = "checkCookie()" id = "Start">Begin Game</button></div>
+
+	<div id ="fourth"></div>
+
+	<div id = "image" style="visibility:hidden;" >
+	<br>
+	<img src = "ferra.jpg" alt = "Lamborghini">
+	<br> 
+	</div>
+	
+	<script src="game.js"></script>
+
+	<br><br><br><br><br>
+
+	<div id ="box" style="visibility:hidden;"><br>
+	<button onclick="FerrariClick()">Ferrari</button>
+	<button onclick="LamborghiniClick()" >Lamborghini</button>
+	<button onclick="DodgeClick()">Dodge</button>
+	<button onclick="MercedesClick()">Mercedes</button>
+	</div>
+	</div>
+
+	<div class = "split right">
+	<div id = "side" style="visibility:hidden;" align = "left">
+	<button onclick="showbox()">Hint</button> <br>
+	<button onclick="">Pause</button>
+	</div>
+
+
+	<div id="numCount" style="visibility:hidden;"> 
+	<button id="results" value="0"> 0 </button>
+
+	</div>
+	</div>
+
+</body>
+</html>
