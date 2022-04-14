@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Guessing Game</title>
+		<link rel="icon" href="/Pages/Home/favicon.jpg"/>
+		<link rel="stylesheet" type="text/css" href="/Pages/Home/CSS/Home.css">
+		<link rel="stylesheet" type="text/css" href="/../Pages/Components/Body.css">
+		<link rel="stylesheet" type="text/css" href="/../Pages/Components/Menu.css">
+		<link rel="stylesheet" type="text/css" href="/../Pages/Components/Header.css">
+		<link rel="stylesheet" type="text/css" href="/../Pages/Components/Footer.css">
+		<script src="/Pages/Home/HomeJS/Home.js"></script>
+		<script src="/Pages/Home/HomeJS/game.js"></script>
+	</head>
+
+	<body>
+
+		<h1> Guess the availble car? </h1>
+
+		<div class = "split left">
+			<center>
+			<!-- <p> [Place Instructions here] </p> -->
+			<div id="result"> </div>
+			</center>
+
+			<div id = "third">
+				<button onload="checkCookie()" onclick = "checkCookie()" id = "Start">Begin Game</button>
+			</div>
+
+			<div id = "image" style="visibility:hidden;" >
+
+			<br>
+
+			<img src = "/Pages/Home/ferra.jpg" alt = "Lamborghini">
+
+			<br>
+
+			</div>
+
+			<br><br><br><br><br>
+
+			<div id ="box" style="visibility:hidden;">
+				<br>
+				<button id = "button2" onclick="FerrariClick()">Ferrari</button>
+				<button id = "button2" onclick="LamborghiniClick()" >Lamborghini</button>
+				<button id = "button2" onclick="DodgeClick()">Dodge</button>
+				<button id = "button2" onclick="MercedesClick()">Mercedes</button>
+			</div>
+		</div>
+
+		<div class = "split right">
+			<div id = "side" style="visibility:hidden;" align = "left">
+				<button id = "button3" onclick="showbox()">Hint</button>
+				<br>
+				<button id = "button3" onclick="">Pause</button>
+			</div>
+
+
+			<div id="numCount" style="visibility:hidden;">
+			<button id = "button3" id="results" value="0"> 0 </button>
+
+			</div>
+		</div>
+
+		<h4>
+		 <center> Last modified: April 14th, 2020. Author: Davir </center>
+		</h4>
+
+	</body>
+</html>
