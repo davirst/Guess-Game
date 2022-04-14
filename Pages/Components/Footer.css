@@ -1,0 +1,13 @@
+h4{
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 13px;
+  width: 340.12px;
+  height: 47px;
+  background: rgba(255, 255, 255, 0.24);
+  border-radius: 200px;
+}

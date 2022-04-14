@@ -1,0 +1,13 @@
+h1{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0px 13px;
+	width: 447.12px;
+	height: 66px;
+	background: rgba(255, 255, 255, 0.24);
+	border-radius: 189px;
+	margin: auto;
+	text-transform: uppercase;
+	color: aliceblue
+ }
