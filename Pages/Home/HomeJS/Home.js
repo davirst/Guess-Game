@@ -46,7 +46,7 @@ function show(){
 	box.style.visibility = 'visible';
 	var side = document.getElementById("side");
 	side.style.visibility = 'visible';
-	var numCount = document.getElementById("numCount");
+	var numCount = document.getElementById("progressBar");
 	numCount.style.visibility = 'visible';
 }
 
@@ -56,7 +56,21 @@ function showbox(){
 	$(image).fadeIn("60");
 }
 
-function checkcount() {
-  for (var i =0; i<2; i++);
-    console.count();
+var timeleft = 10;
+var downloadTimer = setInterval(function(){
+if(timeleft <= 0){
+    clearInterval(downloadTimer);
+    alert("Game Over, you run out of time.");
+    if (confirm("Ready for a New Game?")){
+      window.location.reload()
+    }
+}
+
+
+document.getElementById("progressBar").value = 10 - timeleft;
+  timeleft -= 1;
+}, 1000);
+
+function newgame(){
+  window.location.reload();
 }
