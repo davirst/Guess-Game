@@ -1,11 +1,11 @@
 img {
 	border-color: red;
-    width: 500px;
-    height: 300px;
-    position: absolute;
-    top: 17%;
-    left: 28%;
-    clip: rect(104px,477px,153px,2px);
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  top: 2%;
+  left: 24%;
+  clip: rect(104px,477px,153px,2px);
 }
 
 #third{
@@ -110,4 +110,17 @@ img {
     font-size: 25px;
     position: absolute;
     left: 5%;
+}
+
+#newgame{
+	border-radius: 20px;
+	color: aliceblue;
+	background-color: transparent;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	border-color: antiquewhite;
 }
